@@ -126,10 +126,10 @@ public class TechJobs {
                 for (Map.Entry<String, String> job : jobs.entrySet()){
                     System.out.println(job.getKey() + ": " + job.getValue());
                 }
-                System.out.println("*****");
+                System.out.println("*****\n");
             }
         } else {
-            System.out.println("There were no jobs available to print.");
+            System.out.println("No Results");
         }
     }
 }
