@@ -58,7 +58,7 @@ public class TechJobs {
                 String searchField = getUserSelection("Search by:", columnChoices);
 
                 // What is their search term?
-                System.out.println("Search term:");
+                System.out.println("Search term:\n");
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
@@ -91,7 +91,7 @@ public class TechJobs {
 
             // Print available choices
             for (int j = 0; j < choiceKeys.length; j++) {
-                System.out.println(j + " - " + choices.get(choiceKeys[j]));
+                System.out.println("" + j + " - " + choices.get(choiceKeys[j]));
             }
 
             if (in.hasNextInt()) {
@@ -124,9 +124,9 @@ public class TechJobs {
             for (HashMap<String, String> jobs : someJobs){
                 System.out.println("*****");
                 for (Map.Entry<String, String> job : jobs.entrySet()){
-                    System.out.println(job.getKey() + ":" + job.getValue());
+                    System.out.println(job.getKey() + ": " + job.getValue());
                 }
-                System.out.println("*****");
+                System.out.println("*****\n");
             }
         } else {
             System.out.println("No Results");
