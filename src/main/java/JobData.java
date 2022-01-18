@@ -95,14 +95,11 @@ public class JobData {
         //load data, if not already loaded
         loadData();
 
-//        val = val.toLowerCase();
-
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
         for (HashMap<String, String> row : allJobs){
             for (String key : row.keySet()){
                 String valueInput = row.get(key);
-//                String valueInput = job.getValue().toLowerCase();
                 if (valueInput.toLowerCase().contains(val.toLowerCase())){
                     jobs.add(row);
                     break;
