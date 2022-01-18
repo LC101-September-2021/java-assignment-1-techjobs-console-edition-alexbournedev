@@ -58,6 +58,7 @@ public class TechJobs {
                 String searchField = getUserSelection("Search by:", columnChoices);
 
                 // What is their search term?
+                System.out.println("\n");
                 System.out.println("Search term:");
                 String searchTerm = in.nextLine().toLowerCase();
 
