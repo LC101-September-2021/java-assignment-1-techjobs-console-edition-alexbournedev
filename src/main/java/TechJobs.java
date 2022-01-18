@@ -122,14 +122,15 @@ public class TechJobs {
 
         if (someJobs.size() == 0){
             System.out.println("No Results");
-        } else {
-            for (HashMap<String, String> jobs : someJobs){
-                System.out.println("*****");
-                for (Map.Entry<String, String> job : jobs.entrySet()){
-                    System.out.println(job.getKey() + ": " + job.getValue());
-                }
-                System.out.println("*****");
-            }
+            return;
         }
+            for (HashMap<String, String> jobs : someJobs){
+                String result = "\n*****\n";
+                for (Map.Entry<String, String> job : jobs.entrySet()){
+                    result += (job.getKey() + ": " + job.getValue() + "\n");
+                }
+                result += "*****";
+                System.out.println(result);
+            }
     }
 }
