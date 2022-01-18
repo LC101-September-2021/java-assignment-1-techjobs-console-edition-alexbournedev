@@ -11,7 +11,6 @@ public class TechJobs {
     static Scanner in = new Scanner(System.in);
 
     public static void main (String[] args) {
-        String noRes = "No Results";
 
         // Initialize our field map with key/name pairs
         HashMap<String, String> columnChoices = new HashMap<>();
@@ -59,7 +58,7 @@ public class TechJobs {
                 String searchField = getUserSelection("Search by:", columnChoices);
 
                 // What is their search term?
-                System.out.println("\nSearch term:\n");
+                System.out.println("Search term:");
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
@@ -122,7 +121,7 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         if (someJobs.size() == 0){
-            System.out.print("No Results");
+            System.out.println("No Results");
         } else {
             for (HashMap<String, String> jobs : someJobs){
                 System.out.println("*****");
